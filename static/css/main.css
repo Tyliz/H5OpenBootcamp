@@ -1,0 +1,10 @@
+.content-center {
+	display: grid;
+	place-items: center;
+}
+
+.video {
+	height: 80vh;
+	width: 80%;
+	background: #000;
+}
