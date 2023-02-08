@@ -1,0 +1,12 @@
+:root {
+	--primary-color: #fff;
+	--primary-bg-color: #54043c;
+}
+
+[class^="lista"] li:first-child {
+	color: red;
+}
+
+.lista-desordenada li:first-child {
+	font-size: 2rem;
+}
