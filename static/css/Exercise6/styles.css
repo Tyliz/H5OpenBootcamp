@@ -1,0 +1,233 @@
+:root {
+	--color-bg-google: #1a73e8;
+	--color-bg-twitter: #d6d6d6;
+	--color-bg-gray: #f1f1f1;
+	--color-bg-hover: #f1f1f1;
+	--color-bg-primary: #ea4c89;
+	--color-bg-primary-transparent: #ea4c891a;
+	--color-bg-secondary: #4f3cc9;
+	--color-bg-secondary-hover: #7263d4;
+	--color-contrast: #fff;
+	--color-bg: #fff;
+	--color-font: #000;
+	--color-logo-filter: invert(99%) sepia(1%) saturate(6%) hue-rotate(348deg) brightness(103%) contrast(102%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+.dark-theme {
+	--color-font: #fff;
+	--color-contrast: #161717;
+	--color-bg: #212121;
+	--color-bg-gray: #454045;
+	--color-bg-hover: #454045;
+	--color-logo-filter: invert(95%) sepia(95%) saturate(20%) hue-rotate(18deg) brightness(105%) contrast(106%);;
+}
+
+.body-registro {
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-bg);
+}
+
+.header-registro {
+	width: 100%;
+	text-align: left;
+	margin: 0 auto;
+	padding: 48px 0 0 0;
+	text-align: left;
+}
+
+.content-center {
+	display: grid;
+	place-items: center;
+	max-width: calc(100% - 80px);
+	padding: 0 20px 0 20px;
+	margin: auto;
+}
+
+.title {
+	width: 100%;
+	text-align: left;
+	color: var(--color-bg-primary);
+}
+
+.dribbble-logo {
+	width: 90px;
+	filter: var(--color-logo-filter);
+}
+
+.buttons-registro-externo {
+	display: flex;
+	width: 100%;
+	text-align: left;
+	gap: 15px
+}
+
+.btn-google {
+	display: flex;
+	background: var(--color-bg-google);
+	border: none;
+	border-radius: 5px;
+	padding: 3px;
+	align-content: center;
+	align-items: center;
+	color: var(--color-font);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.btn-google__icon-container {
+	display: flex;
+	background: var(--color-contrast);
+	text-align: center;
+	padding: 10px;
+	align-content: center;
+	align-items: center;
+}
+
+.btn-google__icon {
+	width: 1rem;
+}
+
+.btn-google__text {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: bold;
+	padding: 0 20px;
+}
+
+.btn-twitter {
+	display: flex;
+	background: var(--color-bg-twitter);
+	border: none;
+	border-radius: 5px;
+	padding: 3px;
+	align-content: center;
+	align-items: center;
+}
+
+.btn-twitter__icon-container {
+	display: flex;
+	text-align: center;
+	padding: 10px;
+	align-content: center;
+	align-items: center;
+}
+
+.btn-twitter__icon {
+	width: 1rem;
+	filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(184deg) brightness(118%) contrast(119%);
+}
+
+.hr-or {
+	width: 100%;
+	overflow: visible;
+	border: none;
+	border-top: 1px solid #d6d6d6;
+	margin: 30px;
+	text-align: center;
+}
+
+.hr-or::after {
+	content: 'Or';
+	color: var(--color-font);
+	display: inline-block;
+	position: relative;
+	transform: translateY(-50%);
+	background: var(--color-bg);
+	padding: 0 16px;
+}
+
+
+.form {
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	gap: 20px;
+	justify-items: wrap;
+	margin-bottom: 15px;
+}
+
+.form-group {
+	width: 100%;
+}
+
+.form-group--middle {
+	max-width: 50%;
+}
+
+.form-label {
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: var(--color-font);
+}
+
+.form-control {
+	background: var(--color-bg-gray);
+	width: calc(100% - 21px);
+	height: 30px;
+	border: 1px solid var(--color-contrast)fff;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.form-control:hover {
+	border-color: rgba(0,0,0,0.1);
+	background-color: var(--color-bg-hover);
+	-webkit-box-shadow: 0 0 0 4px var(--color-bg-primary-transparent);
+	box-shadow: 0 0 0 4px var(--color-bg-primary-transparent);
+}
+
+.form-control:focus {
+	outline: 1px solid var(--color-bg-primary);
+	background-color: var(--color-contrast);
+}
+
+.checkbox-group {
+	display: grid;
+	gap: 15px;
+	grid-template-columns: 25px auto;
+}
+
+.enlace {
+	text-decoration: none;
+	color: var(--color-bg-secondary);
+}
+
+.enlace:hover {
+	color: var(--color-bg-secondary-hover);
+}
+
+.checkbox {
+	outline: 1px solid var(--color-contrast);
+	width: 25px;
+	height: 25px;
+	border: 1px solid var(--color-contrast);
+}
+
+.checkbox:checked {
+	border: 1px solid var(--color-bg-secondary);
+	accent-color: var(--color-bg-secondary);
+}
+
+.checkbox__text {
+	position: relative;
+	margin: 0;
+	color: var(--color-font);
+	font: normal 14px/18px;
+}
+
+.btn-submit {
+	width: 100%;
+	color: var(--color-contrast);
+	background-color: var(--color-bg-primary);
+	padding: 15px 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
