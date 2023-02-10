@@ -1,0 +1,14 @@
+/* Para impresiones */
+@media print {
+	body {
+		background: #ff0000 !important;
+	}
+
+	h1 {
+		color: rgb(134, 0, 0);
+	}
+
+	.btn-modern {
+		display: none;
+	}
+}
