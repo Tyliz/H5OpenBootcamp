@@ -1,0 +1,22 @@
+:root {
+	--color-bg-primary-btn: #00789a;
+	--color-shadow-primary-btn: #00799a96;
+	--color-text-primary-btn: #fff;
+}
+
+.btn-modern {
+	border: none;
+	color: var(--color-text-primary-btn);
+	background-color: var(--color-bg-primary-btn);
+	padding: 10px 15px;
+	border-radius: 5px;
+	transition: all 0.4s;
+}
+
+.btn-modern:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 5px var(--color-shadow-primary-btn);
+	background-color: var(--color-text-primary-btn);
+	color: var(--color-bg-primary-btn);
+	border: 1px solid;
+}
