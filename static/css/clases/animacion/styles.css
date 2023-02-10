@@ -1,0 +1,41 @@
+.padre {
+	width: 400px;
+	height: 400px;
+	background-color: blue;
+}
+
+.hijo {
+	width: 50%;
+	height: 50%;
+	background-color: purple;
+	/* linear => igual */
+	/* para que propiedades, cuanto duara, tipo, delay */
+	/* transition: all 1s ease-in-out 150ms; */
+	animation: translacion 1s infinite forwards alternate;
+}
+
+.padre:hover .hijo {
+	/* transform: translateX(100%);
+	background-color: blueviolet; */
+	animation-play-state: paused;
+}
+
+@keyframes translacion {
+	0% {
+		background-color: purple;
+		transform: translate();
+	}
+	25% {
+		transform: translateX(100%);
+	}
+	50% {
+		transform: translateX(100%) translateY(100%);
+	}
+	75% {
+		transform: translateX(0) translateY(100%);
+	}
+	100% {
+		background-color: #99f5f5;
+		transform: translateX(0) translateY(0);
+	}
+}
