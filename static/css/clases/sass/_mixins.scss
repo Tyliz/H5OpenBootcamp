@@ -1,0 +1,8 @@
+@use 'root';
+
+@mixin formato-texto($bg-color: root.$color-bg-primary) {
+	color: root.$page-font-color;
+	text-transform: uppercase;
+	width: 50rem;
+	background-color: $bg-color;
+}
