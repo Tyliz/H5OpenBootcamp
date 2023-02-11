@@ -1,0 +1,17 @@
+:root {
+	--page-bg: azure;
+	--page-font-color: #3f3f3f;
+	--color-bg-primary: #420045;
+	--secondary-bg-color: aquamarine;
+	--page-font-hover: #fff;
+}
+
+$page-bg: var(--page-bg);
+$page-font-color: var(--page-font-color);
+$color-bg-primary: var(--color-bg-primary);
+$secondary-bg-color: var(--secondary-bg-color);
+$page-font-hover: var(--page-font-hover);
+
+.dark-theme {
+	--page-bg: #2e2e2e;
+}

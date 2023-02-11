@@ -1,0 +1,15 @@
+.btn {
+	border: none;
+	padding: .25rem .5rem;
+	color: #2b2b2b;
+
+	&:hover {
+		background: cyan;
+		color: red;
+	}
+}
+
+.btn-primary {
+	@extend .btn;
+	border-radius: 0.25rem;
+}
